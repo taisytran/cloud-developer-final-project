@@ -1,17 +1,18 @@
 # Ignore everything
 *
 
-# Except  
-!src
-!package.json
-!public
-!.env
-!.editorconfig
-!.gitignore
-!.npmrc
-!.prettierrc.json
+# Except
+!build
 !Dockerfile
-!tsconfig.json
+# !src
+# !package.json
+# !public
+# !.env
+# !.editorconfig
+# !.gitignore
+# !.npmrc
+# !.prettierrc.json
+# !tsconfig.json
 
 # Ignore node_modules
 node_modules

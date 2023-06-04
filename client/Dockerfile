@@ -1,12 +1,12 @@
-FROM python:3.10.11-alpine
+# FROM python:3.10.11-alpine
 
-FROM node:18-alpine as builder
+# FROM node:18-alpine as builder
 WORKDIR /app
-COPY package*.json ./
-RUN npm install
-RUN npm audit fix | true
+# COPY package*.json ./
+# RUN npm install
+# RUN npm audit fix | true
 COPY . .
-RUN npm run build
+# RUN npm run build
 
 FROM nginx:alpine
 EXPOSE 80
