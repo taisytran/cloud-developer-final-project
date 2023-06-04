@@ -20,7 +20,7 @@ jobs:
       - name: Test serverless webpack run build
         run: |
           cd backend
-          npm install
+          npm ci
           npx serverless webpack --out build
 
 
@@ -38,6 +38,6 @@ jobs:
       - name: Test react run build
         run: |
           cd client
-          npm install
+          npm ci
           npm run build
 
