@@ -11,7 +11,6 @@ plugins:
 provider:
   name: aws
   runtime: nodejs18.x
-  #lambdaHashingVersion: '20201221'
 
   stage: ${opt:stage, 'dev'}
   region: ${opt:region, 'us-east-1'}
@@ -25,7 +24,7 @@ provider:
   environment:
     TODOS_TABLE: Todos-${self:provider.stage}
     TODOS_CREATED_AT_INDEX: CreatedAtIndex
-    ATTACHMENT_S3_BUCKET: serverless-c4-todo-images-taisytran-${self:provider.stage}
+    ATTACHMENT_S3_BUCKET: serverless-c4-todo-images-final-taisytran-${self:provider.stage}
     SIGNED_URL_EXPIRATION: 300
 
   logs:
