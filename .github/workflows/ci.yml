@@ -16,11 +16,11 @@ jobs:
         with:
           node-version: '18.x'
 
-      - name: Serverless webpack run build
+      - name: Test serverless webpack run build
         run: |
           cd backend
           npm install
-          serverless webpack --out build
+          npx serverless webpack --out build
 
 
   build-client:
@@ -34,7 +34,7 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: React run build
+      - name: Test react run build
         run: |
           cd client
           npm install
