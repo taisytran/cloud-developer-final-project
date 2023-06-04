@@ -24,6 +24,8 @@
     "@types/styled-components": "^5.1.11",
     "auth0-js": "^9.16.2",
     "axios": "^0.21.1",
+    "babel-eslint": "^10.1.0",
+    "eslint-plugin-react": "^7.32.2",
     "typescript": ">=3.8.0"
   },
   "scripts": {
