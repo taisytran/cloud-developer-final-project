@@ -1,0 +1,17 @@
+# Ignore everything
+*
+
+# Except  
+!src
+!package.json
+!public
+!.env
+!.editorconfig
+!.gitignore
+!.npmrc
+!.prettierrc.json
+!Dockerfile
+!tsconfig.json
+
+# Ignore node_modules
+node_modules
