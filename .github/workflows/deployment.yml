@@ -12,6 +12,9 @@ jobs:
     runs-on: ubuntu-latest
     env:
       SERVERLESS_ACCESS_KEY: ${{ secrets.SERVERLESS_ACCESS_KEY }}
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+      AWS_SESSION_TOKEN: ${{ secrets.AWS_SESSION_TOKEN }}
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
@@ -21,8 +24,7 @@ jobs:
         run: |
           cd backend
           npm install
-          npm install -g serverless@3.32.2
-          serverless deploy --verbose
+          npx serverless deploy --verbose
 
   client:
     runs-on: ubuntu-latest
@@ -48,4 +50,4 @@ jobs:
         run: |
           cd client
           npm install
-          eb deploy
+          eb deploy --timeout 15
