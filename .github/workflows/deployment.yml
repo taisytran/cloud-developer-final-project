@@ -23,7 +23,8 @@ jobs:
       - name: Deploy
         run: |
           cd backend
-          npm ci
+          npm install
+          npm audit fix | true
           npx serverless deploy --verbose
 
   client:
@@ -49,5 +50,6 @@ jobs:
       - name: Deploy
         run: |
           cd client
-          npm ci
+          npm install
+          npm audit fix | true
           eb deploy --timeout 30

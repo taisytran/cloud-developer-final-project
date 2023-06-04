@@ -2,7 +2,10 @@ name: CI
 
 on:
   push:
+    branches:
+      - master
   pull_request:
+  workflow_dispatch:
 
 jobs:
   build-backend:
@@ -20,7 +23,8 @@ jobs:
       - name: Test serverless webpack run build
         run: |
           cd backend
-          npm ci
+          npm install
+          npm audit fix | true
           npx serverless webpack --out build
 
 
@@ -38,6 +42,7 @@ jobs:
       - name: Test react run build
         run: |
           cd client
-          npm ci
+          npm install
+          npm audit fix | true
           npm run build
 
