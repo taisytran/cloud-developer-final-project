@@ -1,9 +1,9 @@
 branch-defaults:
   default:
-    environment: null
+    environment: TodoAppClient9-dev
     group_suffix: null
 global:
-  application_name: TodoAppClient8
+  application_name: TodoAppClient10
   branch: null
   default_ec2_keyname: vockey
   default_platform: Docker running on 64bit Amazon Linux 2

@@ -4,15 +4,15 @@
 # Except
 !build
 !Dockerfile
-# !src
-# !package.json
-# !public
-# !.env
-# !.editorconfig
-# !.gitignore
-# !.npmrc
-# !.prettierrc.json
-# !tsconfig.json
+!src
+!package.json
+!public
+!.env
+!.editorconfig
+!.gitignore
+!.npmrc
+!.prettierrc.json
+!tsconfig.json
 
 # Ignore node_modules
 node_modules
