@@ -1,5 +1,5 @@
 // TODO: Once your application is deployed, copy an API id here so that the frontend could interact with it
-const apiId = 'cc2ilkgz4f'
+const apiId = 'rv6h02iv7e'
 export const apiEndpoint = `https://${apiId}.execute-api.us-east-1.amazonaws.com/dev`
 
 export const authConfig = {
@@ -7,5 +7,6 @@ export const authConfig = {
   // domain: 'dev-nd9990-p4.us.auth0.com',
   domain: 'dev-n2xulfrdcmmhtfuk.us.auth0.com',            // Auth0 domain
   clientId: 'AUUYtbv94UTN6saiveE94qz3p5DVOg3F',          // Auth0 client id
-  callbackUrl: 'http://localhost:3000/callback'
+  // callbackUrl: 'http://localhost:3000/callback'
+  callbackUrl: 'http://todoappclient11-dev.us-east-1.elasticbeanstalk.com/callback'
 }
